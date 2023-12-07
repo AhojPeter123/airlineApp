@@ -55,4 +55,10 @@ public class LoginController {
     public String getHome() {
         return "menu";
     }
+
+    @GetMapping("/logout")
+    public String logout() {
+        return "/";
+    }
 }
+
