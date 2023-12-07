@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #98C3C3;
+    overflow: auto;
+}
+
+.topHome {
+    background-color: #305252;
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+}
+
+.midHome {
+    width: 80%;
+    margin: auto;
+}
+
+.topBarNav {
+    margin: 0;
+}
+
+.bottomHome {
+    width: 99%;
+    margin: auto;
+    padding: 60px;
+
+    clear: both;
+}
+
+.nav-link {
+    color: #DB5461!important;
+    font-weight: bold;
+}
+
+.formFlight {
+    background: #98C3C3;
+    box-shadow: 0 0 5px #f1fffa;
+    padding: 10px 10%;
+    border-radius: 10px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destinationInput,
+.dateInput,
+.passengerInput {
+    width: 33%;
+    margin: 5px;
+    text-align: center;
+}
+
+.label h1{
+    color: #DB5461;
+    margin-left: 80px;
+    font-size: 70px;
+}
+
+.formFlight p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.images {
+    clear: both;
+}
+
+.images img {
+    width: 50%;
+}
+
+.images p {
+    font-size: 20px;
+}
+
+
+.nav-item {
+    text-align: right;
+}
+
+.topDefault {
+    background-color: #305252;
+    width: 100%;
+    height: 55px;
+}
+
+.midLogin {
+    padding: 40px;
+    text-align: center;
+}
+
+.userData label {
+    display: block;
+    color: #373e40;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.formLogin button {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #305252;
+    color: #fff;
+    border: none;
+    padding: 5px 7px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formLogin {
+    padding: 20px;
+    background-color: #f1fffa;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.lostPass a {
+    color: #db5461;
+}
+
+.register a {
+    color: #db5461;
+}
+.backgroundLogin {
+    background-color: #98C3C3;
+    height: 100vh;
+}
+
+.midContacts {
+    background-color: #305252;
+    width: 70%;
+}
+
+.midSupport {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.searchForHelp {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.midSupport input[type="text"] {
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #305252;
+    border-radius: 5px;
+}
+
+
+.faq {
+    text-align: center;
+    background-color: #f1fffa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.question {
+    text-align: left;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.question h5 {
+    color: #373e40;
+    font-size: 20px;
+    margin: 0;
+}
+
+.question p {
+    display: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.contactSupport {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.midSupport button {
+    margin-top: 20px;
+    background-color: #db5461;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.question:hover {
+    background-color: #98c3c3;
+}
+
+
+.question.active p {
+    display: block;
+}
+input {
+    background-color: #98C3C3;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #305252;
+}
+
+select {
+    background-color: #98C3C3;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #305252;
+}
+
+
+
+
+
+
+

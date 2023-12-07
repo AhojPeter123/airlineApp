@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+
+    <style>
+
+        td {text-align: center;}
+
+    </style>
+
+</head>
+
+<body>
+
+<table>
+
+    <tr>
+
+        <th> Departure </th>
+
+        <th> Arrival </th>
+
+        <th> Date </th>
+
+        <th> Departure time </th>
+
+        <th> Arrival time </th>
+
+        <th> Seat </th>
+
+        <th> Remove flight </th>
+
+        <th> Find corresponding flight </th>
+
+    </tr>
+
+    <tr	th:each="ticket : ${tickets}">
+
+        <td th:text="${ticket.getFlight().getFromAirport().getName()}"> </td>
+
+        <td th:text="${ticket.getFlight().getToAirport().getName()}"> </td>
+
+        <td th:text="${ticket.getFlight().getDepartureDate()}"> </td>
+
+        <td th:text="${ticket.getFlight().getDepartureTime()}"> </td>
+
+        <td th:text="${ticket.getFlight().getArrivalTime()}"> </td>
+
+        <td th:text="${ticket.getSeatNumber()}"> </td>
+
+        <td>
+
+            <form th:action="@{/remove-flight}" method="post">
+
+                <input type="hidden" name="flightCode" th:value="${ticket.getFlight().getId()}" />
+
+                <input type="hidden" name="seatNumber" th:value="${ticket.getSeatNumber()}" />
+
+                <button type="submit"> Remove</button>
+
+            </form>
+
+        </td>
+
+        <td>
+
+            <form th:action="@{/corresponding-flights}" method="post">
+
+                <input type="hidden" name="arrivalDate" th:value="${ticket.getFlight().getArrivalDate()}" />
+
+                <input type="hidden" name="toCity" th:value="${ticket.getFlight().getToAirport().getCity().getName()}" />
+
+                <button type="submit"> Find</button>
+
+            </form>
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+
+</html>

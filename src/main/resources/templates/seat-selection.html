@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://thymeleaf.org" lang="en">
+
+<head>
+
+    <style>
+
+        td {text-align: center;}
+
+    </style>
+
+</head>
+
+<body>
+
+<h3>Select seat</h3>
+
+<table>
+
+    <tr	th:each="seatNumber : ${flight.getFreeSeats()}">
+
+        <form th:action="@{/book-flight}" method="post">
+
+            <input type="hidden" name="flightCode" th:value="${flight.getId()}" />
+
+            <input type="hidden" name="seatNumber" th:value="${seatNumber}" />
+
+            <button type="submit"> <span th:text="${seatNumber}"></span></button>
+
+        </form>
+
+    </tr>
+
+</table>
+
+</body>
+
+</html>

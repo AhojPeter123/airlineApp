@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://thymeleaf.org">
+
+<head>
+
+</head>
+
+
+
+<body>
+
+<form action="/add-flight" method="post">
+
+    <label for= "departureTime"> Departure time: </label>
+
+    <input type="time" id = "departureTime" name = "departureTime"> <br><br>
+
+
+
+    <label for= "arrivalTime"> Arrival time: </label>
+
+    <input type="time" id = "arrivalTime" name = "arrivalTime"> <br><br>
+
+
+
+    <label for= "departureDate"> Departure date: </label>
+
+    <input type="date" id = "departureDate" name = "departureDate"> <br><br>
+
+
+
+    <label for="arrivalDate"> Arrival date: </label>
+
+    <input type="date" id = "arrivalDate" name = "arrivalDate"> <br><br>
+
+
+
+    <label for= "fromAirport"> From airport: </label>
+
+    <input type="text" id = "fromAirport" name = "fromAirport"> <br><br>
+
+
+
+    <label for= "toAirport"> To airport: </label>
+
+    <input type="text" id = "toAirport" name = "toAirport"> <br><br>
+
+
+
+    <label for= "planeSize"> Plane size: </label>
+
+    <input type="number" id = "planeSize" name = "planeSize"> <br><br>
+
+
+
+    <input type="submit" value="Add flight">
+
+    </form>
+
+</body>
+
+</html>
